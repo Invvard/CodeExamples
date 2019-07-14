@@ -7,18 +7,17 @@ namespace InvvardDev.Examples.PluginApp.Models
         /// <summary>
         /// Gets or sets the keyboard model name.
         /// </summary>
-        string ModelName { get; set; }
+        string ModelName { get; }
 
         /// <summary>
         /// Gets or sets the keyboard list of keys.
         /// </summary>
-        List<string> Keys { get; set; }
+        List<string> Keys { get; }
 
         /// <summary>
-        /// Loads the layout from data.
+        /// Loads the layout.
         /// </summary>
-        /// <param name="data">Data from settings repository</param>
         /// <returns><c>True</c> if loading is successful.</returns>
-        bool LoadLayout(string data);
+        bool LoadLayout();
     }
 }
