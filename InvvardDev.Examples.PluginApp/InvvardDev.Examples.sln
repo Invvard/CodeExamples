@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PluginApp", "PluginApp", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{22E78403-A263-483A-8AD1-8F87ACCA0E70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvvardDev.Plugin.RadioButtonSelection", "InvvardDev.Plugin.RadioButtonSelection\InvvardDev.Plugin.RadioButtonSelection.csproj", "{D1B6FCEC-08CD-4DCE-A51A-CFFF58BBBB38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvvardDev.Plugin.ErgoDoxEz", "InvvardDev.Plugin.RadioButtonSelection\InvvardDev.Plugin.ErgoDoxEz.csproj", "{D1B6FCEC-08CD-4DCE-A51A-CFFF58BBBB38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
