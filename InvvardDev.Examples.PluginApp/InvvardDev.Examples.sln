@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvvardDev.Examples.PluginA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PluginApp", "PluginApp", "{ABA902B8-BE20-4013-B0D8-C9F44FAB732F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{22E78403-A263-483A-8AD1-8F87ACCA0E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvvardDev.Plugin.RadioButtonSelection", "InvvardDev.Plugin.RadioButtonSelection\InvvardDev.Plugin.RadioButtonSelection.csproj", "{D1B6FCEC-08CD-4DCE-A51A-CFFF58BBBB38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{46A8635A-A8B4-432E-8110-38CB64252316}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46A8635A-A8B4-432E-8110-38CB64252316}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46A8635A-A8B4-432E-8110-38CB64252316}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1B6FCEC-08CD-4DCE-A51A-CFFF58BBBB38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B6FCEC-08CD-4DCE-A51A-CFFF58BBBB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B6FCEC-08CD-4DCE-A51A-CFFF58BBBB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B6FCEC-08CD-4DCE-A51A-CFFF58BBBB38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A2A5130E-F3BC-4CFB-9D9B-607985AEC639} = {ABA902B8-BE20-4013-B0D8-C9F44FAB732F}
 		{46A8635A-A8B4-432E-8110-38CB64252316} = {ABA902B8-BE20-4013-B0D8-C9F44FAB732F}
+		{22E78403-A263-483A-8AD1-8F87ACCA0E70} = {ABA902B8-BE20-4013-B0D8-C9F44FAB732F}
+		{D1B6FCEC-08CD-4DCE-A51A-CFFF58BBBB38} = {22E78403-A263-483A-8AD1-8F87ACCA0E70}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB50FFA1-6953-4340-9D2D-4798451A5F21}
