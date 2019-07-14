@@ -1,4 +1,5 @@
-﻿using InvvardDev.Examples.PluginApp.Models;
+﻿using System;
+using InvvardDev.Examples.PluginApp.Models;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 
@@ -12,6 +13,7 @@ namespace InvvardDev.Plugin.ErgoDoxEz
 
         public ErgoDoxEz()
         {
+            Console.WriteLine("Loading the ErgoDox EZ keyboard.");
             ModelName = "ErgoDox EZ";
         }
 
