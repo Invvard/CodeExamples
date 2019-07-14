@@ -66,4 +66,7 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /y $(TargetPath) $(SolutionDir)InvvardDev.Examples.PluginApp.MainApp\bin\$(ConfigurationName)\plugins</PostBuildEvent>
+  </PropertyGroup>
 </Project>
