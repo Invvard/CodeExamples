@@ -16,19 +16,27 @@ namespace InvvardDev.Examples.PluginApp.MainApp.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+        private string _windowsTitle;
+
+        public string WindowsTitle
+        {
+            get { return _windowsTitle;}
+            set { Set(ref _windowsTitle, value); }
+        }
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
         public MainViewModel()
         {
-            ////if (IsInDesignMode)
-            ////{
-            ////    // Code runs in Blend --> create design time data.
-            ////}
-            ////else
-            ////{
-            ////    // Code runs "for real"
-            ////}
+            if (IsInDesignMode)
+            {
+                WindowsTitle = "Design time title";
+            }
+            else
+            {
+                WindowsTitle = "Plugin test app";
+            }
         }
     }
 }
