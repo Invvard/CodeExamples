@@ -1,4 +1,8 @@
+using System.Collections.Generic;
+using System.Linq;
 using GalaSoft.MvvmLight;
+using InvvardDev.Examples.PluginApp.MainApp.Tools;
+using InvvardDev.Examples.PluginApp.Models;
 
 namespace InvvardDev.Examples.PluginApp.MainApp.ViewModel
 {
@@ -16,19 +20,25 @@ namespace InvvardDev.Examples.PluginApp.MainApp.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+        private IPluginLoader<IKeyboardModel> _pluginLoader;
         private string _windowsTitle;
+        private List<string> _keyboardModelNames;
 
         public string WindowsTitle
         {
-            get { return _windowsTitle;}
-            set { Set(ref _windowsTitle, value); }
+            get => _windowsTitle;
+            set => Set(ref _windowsTitle, value);
         }
 
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public MainViewModel()
+        public MainViewModel(IPluginLoader<IKeyboardModel> pluginLoader)
         {
+            _pluginLoader = pluginLoader;
+
+            _keyboardModelNames= pluginLoader.Plugins.Select(p => p.ModelName).ToList();
+
             if (IsInDesignMode)
             {
                 WindowsTitle = "Design time title";

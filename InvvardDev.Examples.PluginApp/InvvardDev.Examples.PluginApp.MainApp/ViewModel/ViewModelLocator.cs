@@ -15,6 +15,8 @@
 using CommonServiceLocator;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
+using InvvardDev.Examples.PluginApp.MainApp.Tools;
+using InvvardDev.Examples.PluginApp.Models;
 
 namespace InvvardDev.Examples.PluginApp.MainApp.ViewModel
 {
@@ -31,16 +33,14 @@ namespace InvvardDev.Examples.PluginApp.MainApp.ViewModel
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
-            ////if (ViewModelBase.IsInDesignModeStatic)
-            ////{
-            ////    // Create design time view services and models
-            ////    SimpleIoc.Default.Register<IDataService, DesignDataService>();
-            ////}
-            ////else
-            ////{
-            ////    // Create run time view services and models
-            ////    SimpleIoc.Default.Register<IDataService, DataService>();
-            ////}
+            if (ViewModelBase.IsInDesignModeStatic)
+            {
+                SimpleIoc.Default.Register<IPluginLoader<IKeyboardModel>, DesignPluginLoader<IKeyboardModel>>();
+            }
+            else
+            {
+                SimpleIoc.Default.Register<IPluginLoader<IKeyboardModel>>(() => new PluginLoader<IKeyboardModel>("plugins") , true);
+            }
 
             SimpleIoc.Default.Register<MainViewModel>();
         }
