@@ -21,6 +21,7 @@ namespace InvvardDev.Examples.PluginApp.MainApp.ViewModel
     public class MainViewModel : ViewModelBase
     {
         private IPluginLoader<IKeyboardModel> _pluginLoader;
+        private object _keyboardView;
         private string _windowsTitle;
         private List<string> _keyboardModelNames;
 
@@ -30,6 +31,12 @@ namespace InvvardDev.Examples.PluginApp.MainApp.ViewModel
             set => Set(ref _windowsTitle, value);
         }
 
+        public object KeyboardView
+        {
+            get => _keyboardView;
+            set => Set(ref _keyboardView, value);
+        }
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
@@ -37,7 +44,8 @@ namespace InvvardDev.Examples.PluginApp.MainApp.ViewModel
         {
             _pluginLoader = pluginLoader;
 
-            _keyboardModelNames= pluginLoader.Plugins.Select(p => p.ModelName).ToList();
+            _keyboardModelNames = pluginLoader.Plugins.Select(p => p.ModelName).ToList();
+            KeyboardView = _pluginLoader.Plugins.First().GetKeyboardView();
 
             if (IsInDesignMode)
             {

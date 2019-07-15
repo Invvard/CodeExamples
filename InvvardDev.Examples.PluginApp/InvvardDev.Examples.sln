@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvvardDev.Examples.PluginApp.MainApp", "InvvardDev.Examples.PluginApp.MainApp\InvvardDev.Examples.PluginApp.MainApp.csproj", "{A2A5130E-F3BC-4CFB-9D9B-607985AEC639}"
+	ProjectSection(ProjectDependencies) = postProject
+		{90AAD4F5-D4F6-44F2-B947-04363A770115} = {90AAD4F5-D4F6-44F2-B947-04363A770115}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvvardDev.Examples.PluginApp.Models", "InvvardDev.Examples.PluginApp.Models\InvvardDev.Examples.PluginApp.Models.csproj", "{46A8635A-A8B4-432E-8110-38CB64252316}"
 EndProject
