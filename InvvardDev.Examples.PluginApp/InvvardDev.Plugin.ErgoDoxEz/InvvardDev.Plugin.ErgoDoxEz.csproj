@@ -52,6 +52,9 @@
     <Compile Include="ErgoDoxEz.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="View\ErgoDoxEzView.xaml.cs">
+      <DependentUpon>ErgoDoxEzView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -65,6 +68,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Page Include="View\ErgoDoxEzView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy /y $(TargetPath) $(SolutionDir)InvvardDev.Examples.PluginApp.MainApp\bin\$(ConfigurationName)\plugins</PostBuildEvent>
