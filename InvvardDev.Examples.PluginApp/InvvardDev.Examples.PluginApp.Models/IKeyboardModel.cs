@@ -19,5 +19,11 @@ namespace InvvardDev.Examples.PluginApp.Models
         /// </summary>
         /// <returns><c>True</c> if loading is successful.</returns>
         bool LoadLayout();
+
+        /// <summary>
+        /// Gets the keyboard view.
+        /// </summary>
+        /// <returns>The user control to be displayed.</returns>
+        object GetKeyboardView();
     }
 }
