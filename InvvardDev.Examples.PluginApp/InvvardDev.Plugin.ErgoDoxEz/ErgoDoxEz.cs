@@ -2,10 +2,12 @@
 using InvvardDev.Examples.PluginApp.Models;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
+using InvvardDev.Plugin.ErgoDoxEz.View;
+using InvvardDev.Plugin.ErgoDoxEz.ViewModel;
 
 namespace InvvardDev.Plugin.ErgoDoxEz
 {
-    [Export(typeof(IKeyboardModel))]
+    [ Export(typeof(IKeyboardModel)) ]
     public class ErgoDoxEz : IKeyboardModel
     {
         public string ModelName { get; private set; }
@@ -20,10 +22,23 @@ namespace InvvardDev.Plugin.ErgoDoxEz
         public bool LoadLayout()
         {
             Keys = new List<string> {
-                                        "A", "B", "C", "D", "E", "F", "G"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D",
+                                        "E",
+                                        "F",
+                                        "G"
                                     };
 
             return true;
+        }
+
+        public object GetKeyboardView()
+        {
+            return new ErgoDoxEzControl {
+                                            DataContext = new ErgoDoxEzViewModel()
+                                        };
         }
     }
 }
