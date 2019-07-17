@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using InvvardDev.Examples.PluginApp.Models;
+using InvvardDev.Plugin.PlanckEz.View;
+using InvvardDev.Plugin.PlanckEz.ViewModel;
 
 namespace InvvardDev.Plugin.PlanckEz
 {
-    [Export(typeof(IKeyboardModel))]
+    [ Export(typeof(IKeyboardModel)) ]
     public class PlanckEz : IKeyboardModel
     {
         public string ModelName { get; }
@@ -23,7 +25,9 @@ namespace InvvardDev.Plugin.PlanckEz
 
         public object GetKeyboardView()
         {
-            throw new NotImplementedException();
+            return new PlanckEzControl {
+                                           DataContext = new PlanckEzViewModel()
+                                       };
         }
     }
 }
