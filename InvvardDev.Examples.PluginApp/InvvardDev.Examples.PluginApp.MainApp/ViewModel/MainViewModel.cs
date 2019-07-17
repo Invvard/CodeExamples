@@ -24,6 +24,7 @@ namespace InvvardDev.Examples.PluginApp.MainApp.ViewModel
         private object _keyboardView;
         private string _windowsTitle;
         private List<string> _keyboardModelNames;
+        private string _selectedItem;
 
         public string WindowsTitle
         {
@@ -37,6 +38,35 @@ namespace InvvardDev.Examples.PluginApp.MainApp.ViewModel
             set => Set(ref _keyboardView, value);
         }
 
+        public List<string> KeyboardModelNames
+        {
+            get => _keyboardModelNames;
+            set => Set(ref _keyboardModelNames, value);
+        }
+
+        public string SelectedItem
+        {
+            get => _selectedItem;
+            set
+            {
+                if (Set(ref _selectedItem, value))
+                {
+                    ChangeView(_selectedItem);
+                }
+                
+            }
+        }
+
+        private void ChangeView(string selectedItem)
+        {
+            var view = _pluginLoader.Plugins.FirstOrDefault(p => p.ModelName == selectedItem)?.GetKeyboardView();
+
+            if (view != null)
+            {
+                KeyboardView = view;
+            }
+        }
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
@@ -44,8 +74,8 @@ namespace InvvardDev.Examples.PluginApp.MainApp.ViewModel
         {
             _pluginLoader = pluginLoader;
 
-            _keyboardModelNames = pluginLoader.Plugins.Select(p => p.ModelName).ToList();
-            KeyboardView = _pluginLoader.Plugins.First().GetKeyboardView();
+            KeyboardModelNames = pluginLoader.Plugins.Select(p => p.ModelName).ToList();
+            SelectedItem = KeyboardModelNames.FirstOrDefault() ?? "";
 
             if (IsInDesignMode)
             {
