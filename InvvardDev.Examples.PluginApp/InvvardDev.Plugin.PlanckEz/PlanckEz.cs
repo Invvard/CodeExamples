@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Composition;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using InvvardDev.Examples.PluginApp.Models;
 
 namespace InvvardDev.Plugin.PlanckEz
@@ -17,12 +18,12 @@ namespace InvvardDev.Plugin.PlanckEz
 
         public bool LoadLayout()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public object GetKeyboardView()
         {
-            return new List<string>();
+            throw new NotImplementedException();
         }
     }
 }

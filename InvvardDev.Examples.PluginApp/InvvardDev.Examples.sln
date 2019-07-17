@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{22E7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvvardDev.Plugin.ErgoDoxEz", "InvvardDev.Plugin.ErgoDoxEz\InvvardDev.Plugin.ErgoDoxEz.csproj", "{90AAD4F5-D4F6-44F2-B947-04363A770115}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvvardDev.Plugin.PlanckEz", "InvvardDev.Plugin.PlanckEz\InvvardDev.Plugin.PlanckEz.csproj", "{E4C61899-2939-4ACD-B0AF-2B769EB9D7F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvvardDev.Plugin.PlanckEz", "InvvardDev.Plugin.PlanckEz\InvvardDev.Plugin.PlanckEz.csproj", "{45492754-05CD-4E48-9CD1-DED748453945}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,10 +36,10 @@ Global
 		{90AAD4F5-D4F6-44F2-B947-04363A770115}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90AAD4F5-D4F6-44F2-B947-04363A770115}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90AAD4F5-D4F6-44F2-B947-04363A770115}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E4C61899-2939-4ACD-B0AF-2B769EB9D7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E4C61899-2939-4ACD-B0AF-2B769EB9D7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E4C61899-2939-4ACD-B0AF-2B769EB9D7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E4C61899-2939-4ACD-B0AF-2B769EB9D7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45492754-05CD-4E48-9CD1-DED748453945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45492754-05CD-4E48-9CD1-DED748453945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45492754-05CD-4E48-9CD1-DED748453945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45492754-05CD-4E48-9CD1-DED748453945}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,7 +49,7 @@ Global
 		{46A8635A-A8B4-432E-8110-38CB64252316} = {ABA902B8-BE20-4013-B0D8-C9F44FAB732F}
 		{22E78403-A263-483A-8AD1-8F87ACCA0E70} = {ABA902B8-BE20-4013-B0D8-C9F44FAB732F}
 		{90AAD4F5-D4F6-44F2-B947-04363A770115} = {22E78403-A263-483A-8AD1-8F87ACCA0E70}
-		{E4C61899-2939-4ACD-B0AF-2B769EB9D7F3} = {22E78403-A263-483A-8AD1-8F87ACCA0E70}
+		{45492754-05CD-4E48-9CD1-DED748453945} = {22E78403-A263-483A-8AD1-8F87ACCA0E70}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB50FFA1-6953-4340-9D2D-4798451A5F21}
