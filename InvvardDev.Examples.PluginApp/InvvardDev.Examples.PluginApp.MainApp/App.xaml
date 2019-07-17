@@ -6,11 +6,11 @@
              xmlns:ignore="http://www.galasoft.ch/ignore"
              mc:Ignorable="d ignore"
              StartupUri="View/MainWindow.xaml"
-             xmlns:viewModel="clr-namespace:InvvardDev.Examples.PluginApp.MainApp.ViewModel">
+             xmlns:vm="clr-namespace:InvvardDev.Examples.PluginApp.MainApp.ViewModel">
 
     <Application.Resources>
         <ResourceDictionary>
-            <viewModel:ViewModelLocator x:Key="Locator" d:IsDataSource="True" />
+            <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>
