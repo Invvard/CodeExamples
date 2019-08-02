@@ -67,6 +67,7 @@
     <Compile Include="ErgoDoxEz.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ErgoDoxInfinite.cs" />
     <Compile Include="ViewModel\ErgoDoxEzViewModel.cs" />
     <Compile Include="View\ErgoDoxEzControl.xaml.cs">
       <DependentUpon>ErgoDoxEzControl.xaml</DependentUpon>
