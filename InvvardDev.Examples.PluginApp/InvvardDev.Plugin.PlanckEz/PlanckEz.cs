@@ -15,6 +15,7 @@ namespace InvvardDev.Plugin.PlanckEz
 
         public PlanckEz()
         {
+            Console.WriteLine("Loading the Planck EZ keyboard.");
             ModelName = "Planck EZ";
         }
 
