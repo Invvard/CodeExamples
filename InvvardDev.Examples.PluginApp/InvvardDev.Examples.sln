@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvvardDev.Plugin.ErgoDoxEz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvvardDev.Plugin.PlanckEz", "InvvardDev.Plugin.PlanckEz\InvvardDev.Plugin.PlanckEz.csproj", "{45492754-05CD-4E48-9CD1-DED748453945}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvvardDev.VariousExamples.ConsoleApp", "InvvardDev.VariousExamples\InvvardDev.VariousExamples.ConsoleApp.csproj", "{3C0C7260-D263-4845-BDE4-FFF5D97EBEDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{45492754-05CD-4E48-9CD1-DED748453945}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45492754-05CD-4E48-9CD1-DED748453945}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45492754-05CD-4E48-9CD1-DED748453945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C0C7260-D263-4845-BDE4-FFF5D97EBEDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0C7260-D263-4845-BDE4-FFF5D97EBEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0C7260-D263-4845-BDE4-FFF5D97EBEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0C7260-D263-4845-BDE4-FFF5D97EBEDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
