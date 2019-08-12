@@ -1,10 +1,12 @@
 import urllib.request
 import re
 
-sc = 'https://configure.ergodox-ez.com/layouts/EOEb/latest/0'
+import sourcemap
+
+configuratorUrl = 'https://configure.ergodox-ez.com/layouts/EOEb/latest/0'
 
 
-def get_pagecontent(url):
+def get_page_content(url):
     response = urllib.request.urlopen(url)
     data = response.read()
     page_content = data.decode('utf-8')
@@ -20,12 +22,18 @@ def get_filenames(text):
     if source_maps:
         files = re.finditer(pattern_files, source_maps.group('sourcemaps'))
         for file in files:
-            file_list.append(file.group('filename'))
+            file_list.append(f'{file.group("index")}.{file.group("filename")}')
 
     return file_list
 
 
-content = get_pagecontent('https://configure.ergodox-ez.com/layouts/EOEb/latest/0')
-fileList = get_filenames(content)
+def get_files():
+    for chunkFileId in chunkFileIds:
+        chunk_url = f'https://configure.ergodox-ez.com/static/js/{chunkFileId}.chunk.js.map'
+        source_map = sourcemap.load(urllib.request.urlopen(chunk_url))
+        print(source_map)
 
-print(fileList)
+
+content = get_page_content(configuratorUrl)
+chunkFileIds = get_filenames(content)
+get_files()
