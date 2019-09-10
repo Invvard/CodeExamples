@@ -114,9 +114,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UserControl\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\InvvardDev.Examples.PluginApp.Models\InvvardDev.Examples.PluginApp.Models.csproj">
       <Project>{46A8635A-A8B4-432E-8110-38CB64252316}</Project>

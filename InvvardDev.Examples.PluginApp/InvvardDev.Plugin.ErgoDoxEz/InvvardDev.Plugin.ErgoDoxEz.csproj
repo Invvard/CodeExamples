@@ -85,6 +85,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Skin\ErgoDoxEz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ErgoDoxEzControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
